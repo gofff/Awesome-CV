@@ -11,33 +11,33 @@
 
 %---------------------------------------------------------
   \cventry
-    {Lead Computer Vision Engineer \& Consultant} % Job title
-    {Rescope} % Organization
-    {} % Location
-    {Jun. 2025 - Present} % Date(s)
+    {Lead Computer Vision Engineer \& Consultant}
+    {Rescope}
+    {Jun. 2025 -- Jan. 2026}
+    {San Francisco, US, Remote}
     {
       \begin{cvitems}
-        \item {Led and owned multiple computer vision projects related to building and floorplan analysis, acting as a senior individual contributor with full technical ownership.}
-        \item {Developed a building segmentation pipeline from satellite imagery, combining SAM-based masks with edge refinement and geometry-aware loss/gain fitting using primitive shapes.}
-        \item {Built a PDF layout processing pipeline for extracting structured building data, combining object detection (YOLO), raw PDF vector data extraction, image-based post-processing, and LLM APIs for semantic data interpretation.}
-        \item {Worked on floorplan segmentation from both vector and raster sources, including vector-based preprocessing, matching and transforming multiple representations of the same floorplan, graph-heuristic segmentation from vector data, and U-Net-based segmentation for raster images.}
-        \item {Implemented backend services around the computer vision pipelines using FastAPI, exposing models and data processing workflows via production-ready APIs.}
-        \item {Set up and maintained data preparation and annotation workflows, including dataset versioning and iteration using Roboflow.}
+        \item {Acted as a senior computer vision engineer, independently leading and owning multiple computer vision projects end-to-end, and consulting on product definition, feasibility, required system components, and resource and effort estimation to meet potential customer requirements.}
+        \item {Designed and implemented a building segmentation pipeline from satellite imagery using PyTorch, combining SAM-based masks, edge refinement, and geometry-aware fitting with primitive shapes.}
+        \item {Built a PDF layout processing pipeline for extracting structured building data, combining YOLO-based detection, raw PDF vector data extraction, image-based post-processing, and LLM APIs for semantic interpretation.}
+        \item {Implemented floorplan segmentation solutions for both vector and raster data, including vector preprocessing, alignment of multiple floorplan representations, graph-based heuristics, and U-Net-based segmentation for raster images.}
+        \item {Collected and prepared three datasets (each \(\sim\)1,000 images), including data extraction from PDFs, integration with Mapbox, OpenStreetMap, and Azure Maps, annotation guidelines design, supervision of manual labeling, and training of auto-labeling models.}
+        \item {Wrapped computer vision pipelines into backend services using FastAPI, exposing inference and data processing via production-ready REST APIs.}
       \end{cvitems}
     }
 
   \cventry
     {Research Engineer \& Principal C++ Developer} % Job title
     {ABBYY (CoreOCR Team)} % Organization
-    {} % Location
     {Nov. 2021 - Oct. 2024} % Date(s)
+    {Novi Sad, Serbia, Hybrid} % Location
     {
       \begin{cvitems}
         \item {Worked as a researcher and C++ developer on core components of ABBYY's OCR engine, focusing on robustness and performance under real-world noisy inputs.}
-        \item {Developed a boosting-based classifier to filter out garbage and non-text fragments early in the OCR pipeline, improving overall system stability under unpredictable input conditions.}
-        \item {Improved text layout analysis by enhancing word boundary and line spacing detection using a BiLSTM-based model combining image features with document meta-information.}
-        \item {Contributed to memory footprint reduction and runtime performance optimization of the OCR engine, including profiling, refactoring inference components, and low-level optimizations (multithreading, AVX).}
-        \item {Worked on punctuation handling and post-recognition refinement, improving robustness and precision of language-related components for noisy and ambiguous inputs.}
+        \item {Developed feature extractors and a boosting-based classifier, together with a lightweight BiLSTM model, to improve text layout analysis, including garbage/non-text filtering, word boundary detection, and line spacing recognition. This resulted in a 3--5\% overall recognition quality improvement and more than 10\% improvement on low-quality documents and complex layouts.}
+        \item {Contributed to memory footprint reduction and runtime performance optimization of the OCR engine through profiling, refactoring inference components, and careful memory management in production inference pipelines.}
+        \item {Improved robustness and precision of language-related components by tuning classical (non-LLM) language models and refining heuristic post-processing for noisy and ambiguous recognition results.}
+        \item {Investigated and fixed a critical AVX-related bug by analyzing crash dumps from ARM-based macOS builds and debugging C++ code with gdb, identifying SIMD-specific issues in cross-platform execution.}
       \end{cvitems}
     }
 
@@ -45,16 +45,17 @@
   \cventry
     {Head of Computer Vision \& Senior CV Engineer} % Job title
     {DataNerdsAI} % Organization
-    {} % Location
     {Nov. 2018 - Nov. 2021} % Date(s)
+    {Moscow, Russia, On-site} % Location
     {
       \begin{cvitems}
-        \item {Led the computer vision direction, combining hands-on development with technical leadership, customer communication, and system design.}
-        \item {Designed and delivered multiple production-ready computer vision systems for agriculture and logistics, working end-to-end from requirements definition to deployment in customer environments.}
-        \item {Built camera-based systems for recognizing harvester actions, detecting trucks, and estimating cargo fullness levels in warehouses and agricultural machinery, operating under harsh outdoor conditions and limited computational resources.}
-        \item {Developed vision systems using RGB, depth (Intel RealSense), drone, and satellite imagery, including segmentation, detection, tracking, and classification tasks.}
-        \item {Integrated computer vision solutions with on-prem infrastructure, edge devices (NVIDIA Jetson), and backend services, providing installation guidelines and long-term system support.}
-        \item {Worked closely with customers to translate business processes and constraints into technical requirements, timelines, and system architectures.}
+        \item {Led the computer vision direction, combining hands-on development with technical leadership, system design, and direct customer communication.}
+        \item {Designed and delivered multiple production-ready computer vision systems for agriculture and logistics, working end-to-end from requirements definition and data collection to deployment and long-term support in customer environments.}
+        \item {Built camera-based systems for agriculture and logistics, including harvester action recognition, license plate recognition (LPR), truck detection, and cargo fullness estimation, operating under harsh outdoor conditions and limited computational resources.}
+        \item {Developed computer vision pipelines using RGB, depth (Intel RealSense), drone, and satellite imagery, applying detection and segmentation models such as YOLO and R-CNN, as well as classical tracking and classification approaches.}
+        \item {Integrated computer vision solutions with on-prem infrastructure, edge devices (NVIDIA Jetson), and backend services, including system installation guidelines, hardware requirements, and production monitoring.}
+        \item {Fully owned data preparation and annotation workflows, including dataset collection, annotation guidelines design, supervision of labeling, and quality control using LabelMe and CVAT.}
+        \item {Worked closely with customers to translate business processes and constraints into technical requirements, delivery timelines, and system architectures.}
       \end{cvitems}
     }
 
@@ -62,24 +63,24 @@
   \cventry
     {Computer Vision Researcher \& C++ Developer} % Job title
     {Intelligent Security Systems} % Organization
-    {} % Location
     {Oct. 2016 - Nov. 2018} % Date(s)
+    {Moscow, Russia, On-site} % Location
     {
       \begin{cvitems}
-        \item {Worked on large-scale license plate recognition (LPR) systems, focusing on robustness, performance, and adaptability to real-world deployment conditions.}
-        \item {Extended and adapted LPR systems for multiple countries (Thailand, UAE, Mexico, USA), handling variations in plate formats, fonts, colors, and environmental conditions.}
-        \item {Improved character and number recognition using classical computer vision techniques, including curve- and shape-based analysis, template matching, and feature-based classification without neural networks.}
-        \item {Performed low-level performance optimization of image processing pipelines, including multithreaded C++ implementations and SIMD vectorization (SSE) of core operations such as affine transforms and binarization.}
-        \item {Adapted recognition pipelines for cargo and railway carriage number recognition, including handling broken symbols, unaligned text, and multi-camera result matching.}
-        \item {Developed internal tools for analysis and evaluation of recognition results, including ground-truth comparison, string similarity metrics (Levenshtein distance), and C++ UI components using Qt.}
+        \item {Worked on large-scale license plate recognition (LPR) systems in C++, focusing on robustness, performance, and adaptability to real-world deployment conditions.}
+        \item {Extended and adapted LPR systems for multiple countries (Thailand, UAE, Mexico, USA), handling variations in plate formats, fonts, colors, camera setups, and environmental conditions.}
+        \item {Improved character and number recognition using classical computer vision techniques, using curve- and shape-based analysis, template matching, feature extraction, and feature-based classification without neural networks.}
+        \item {Performed low-level performance optimization of image processing pipelines in C++, including multithreaded implementations and SIMD vectorization (SSE) of core operations such as affine transforms, geometric corrections, and binarization.}
+        \item {Adapted recognition pipelines for cargo and railway carriage number recognition, handling broken symbols, unaligned text, perspective distortions, and multi-camera result matching.}
+        \item {Developed internal tools for analysis and evaluation of recognition results, including ground-truth comparison, string similarity metrics (Levenshtein distance), batch result analysis, and C++ UI components using Qt.}
       \end{cvitems}
     }
 
     \cventry
     {Owner / Operator} % Job title
     {Small Local Business in Serbia} % Organization
-    {} % Location
     {Nov. 2024 - Jun. 2025} % Date(s)
+    {Novi Sad, Serbia, On-site} % Location
     {
       \begin{cvitems}
         \item {Direct responsibility for running and operating a small business, including hiring, payroll, taxes, cost control, and day-to-day operations.}
