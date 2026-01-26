@@ -1,0 +1,92 @@
+%-------------------------------------------------------------------------------
+%	SECTION TITLE
+%-------------------------------------------------------------------------------
+\cvsection{Work Experience}
+
+
+%-------------------------------------------------------------------------------
+%	CONTENT
+%-------------------------------------------------------------------------------
+\begin{cventries}
+
+%---------------------------------------------------------
+  \cventry
+    {Lead Computer Vision Engineer \& Consultant}
+    {Rescope}
+    {Jun. 2025 -- Jan. 2026}
+    {San Francisco, US, Remote}
+    {
+      {\small{\textit{Early-stage startup focused on AI-driven analysis of buildings and architectural data.}}}
+      \vspace{1.2em}
+      \begin{cvitems}
+        \item {Designed and implemented a building segmentation pipeline from satellite imagery using PyTorch, combining SAM-based masks, edge refinement, and geometry-aware fitting with primitive shapes.}
+        \item {Built a PDF layout processing pipeline for extracting structured building data, combining YOLO-based detection, raw PDF vector data extraction, image-based post-processing, and LLM APIs for semantic interpretation.}
+        \item {Implemented floorplan segmentation solutions for both vector and raster data, including vector preprocessing, alignment of multiple floorplan representations, graph-based heuristics, and U-Net-based segmentation for raster images.}
+        \item {Collected and prepared three datasets (each \(\sim\)1,000 images), including data extraction from PDFs, integration with Mapbox, OpenStreetMap, and Azure Maps, annotation guidelines design, supervision of manual labeling, and training of auto-labeling models.}
+        \item {Wrapped computer vision pipelines into backend services using FastAPI, exposing inference and data processing via production-ready REST APIs.}
+      \end{cvitems}
+    }
+
+  \cventry
+    {Research Engineer \& Principal C++ Developer} % Job title
+    {ABBYY (CoreOCR Team)} % Organization
+    {Nov. 2021 - Oct. 2024} % Date(s)
+    {Novi Sad, Serbia, Hybrid} % Location
+    {
+      {\small{\textit{Global technology company specializing in document processing and OCR.}}}
+      \vspace{1.2em}
+      \begin{cvitems}
+        \item {Developed feature extractors and a boosting-based classifier, together with a lightweight BiLSTM model, to improve text layout analysis, including garbage/non-text filtering, word boundary detection, and line spacing recognition. This resulted in a 3--5\% overall recognition quality improvement and more than 10\% improvement on low-quality documents and complex layouts.}
+        \item {Contributed to memory footprint reduction and runtime performance optimization of the OCR engine through profiling, refactoring inference components, and careful memory management in production inference pipelines.}
+        \item {Improved robustness and precision of language-related components by tuning classical (non-LLM) language models and refining heuristic post-processing for noisy and ambiguous recognition results.}
+        \item {Investigated and fixed a critical AVX-related bug by analyzing crash dumps from ARM-based macOS builds and debugging C++ code with gdb, identifying SIMD-specific issues in cross-platform execution.}
+      \end{cvitems}
+    }
+
+%---------------------------------------------------------
+  \cventry
+    {Head of Computer Vision \& Senior Computer Vision Engineer} % Job title
+    {DataNerdsAI} % Organization
+    {Nov. 2018 - Nov. 2021} % Date(s)
+    {Moscow, Russia, On-site} % Location
+    {
+      {\small{\textit{Computer vision consultancy delivering applied AI solutions for industrial domains.}}}
+      \vspace{1.2em}
+      \begin{cvitems}
+        \item {Built camera-based systems including harvester action recognition, license plate recognition (LPR), truck detection, and cargo fullness estimation under harsh outdoor conditions and limited computational resources.}
+        \item {Developed and deployed computer vision pipelines using RGB, depth (Intel RealSense), drone, and satellite imagery with YOLO and R-CNN models, edge deployment on NVIDIA Jetson, and full ownership of data preparation and annotation workflows using LabelMe and CVAT.}
+      \end{cvitems}
+    }
+
+%---------------------------------------------------------
+  \cventry
+    {Computer Vision Researcher \& C++ Developer} % Job title
+    {Intelligent Security Systems} % Organization
+    {Oct. 2016 - Nov. 2018} % Date(s)
+    {Moscow, Russia, On-site} % Location
+    {
+      {\small{\textit{Engineering company focused on computer vision–based security solutions.}}}
+      \vspace{1.2em}
+      \begin{cvitems}
+        \item {Improved license plate recognition (LPR) accuracy using classical computer vision techniques, including curve- and shape-based analysis, template matching, feature extraction, and feature-based classification without neural networks.}
+        \item {Performed low-level performance optimization of LPR and image processing pipelines in C++, including multithreading and SIMD vectorization (SSE) of core operations such as affine transforms, geometric corrections, and binarization.}
+        \item {Extended LPR pipelines to cargo and railway carriage number recognition, handling broken symbols, unaligned text, perspective distortions, and multi-camera result matching.}
+      \end{cvitems}
+    }
+
+    \cventry
+    {Owner / Operator} % Job title
+    {Small Local Business in Serbia} % Organization
+    {Nov. 2024 - Jun. 2025} % Date(s)
+    {Novi Sad, Serbia, On-site} % Location
+    {
+      {\small{\textit{}}}
+      \vspace{0.0em}
+      \begin{cvitems}
+        \item {Direct responsibility for running and operating a small business, including hiring, payroll, taxes, cost control, and day-to-day operations.}
+        \item {Hands-on experience making decisions under financial, legal, and operational constraints, with full accountability for outcomes.}
+      \end{cvitems}
+    }
+
+%---------------------------------------------------------
+\end{cventries}
